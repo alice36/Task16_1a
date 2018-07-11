@@ -1,8 +1,15 @@
 public class SmartHome {
-    public static void smartHome(){
-        Weather weather = StacjaPogodowa.showWeather();
-        SterownikGlosnika.showInfo(weather);
-        SterownikPieca.piec(weather);
-        SterownikRolet.rolety(weather);
+    public void smartHome(){
+        StacjaPogodowa stacjaPogodowa = new StacjaPogodowa();
+        Weather weather = stacjaPogodowa.showWeather();
+
+        SterownikGlosnika sterownikGlosnika = new SterownikGlosnika();
+        sterownikGlosnika.showInfo(weather);
+
+        SterownikPieca sterownikPieca = new SterownikPieca();
+        sterownikPieca.piec(weather);
+
+        SterownikRolet sterownikRolet = new SterownikRolet();
+        sterownikRolet.rolety(weather);
     }
 }

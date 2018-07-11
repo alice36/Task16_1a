@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-       SmartHome.smartHome();
+        SmartHome smartHome = new SmartHome();
+        smartHome.smartHome();
     }
 }

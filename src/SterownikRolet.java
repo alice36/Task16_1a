@@ -1,6 +1,6 @@
 public class SterownikRolet {
 
-    public static void rolety(Weather weather){
+    public void rolety(Weather weather){
         if (weather.getWeatherDescription().equals("słonecznie")){
             System.out.println("Jest słonecznie. Zasłaniam rolety.");
         } else{
